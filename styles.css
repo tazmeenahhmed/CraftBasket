@@ -1,0 +1,29 @@
+body {
+    background-image: url("wallpaper.jpg");
+    background-color: #AEB5A5;
+    font-family: monospace;
+    
+    min-height: 100vh;                      /* Ensure body takes full viewport height */
+    margin: 0;                              /* Eliminates unwanted space around the edges of the page */
+    padding: 0;                             /* Ensures no internal spacing disrupts centering */
+    box-sizing: border-box;                 /* Makes sure padding and borders are included in an element’s total width/height (prevents layout shifts)*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN BODY */
+
+#outer-box {
+    height: 850px;
+    width: 80%;
+    border-radius: 50px;
+
+    background-color: white;
+    border: 8px double #AEB5A5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
