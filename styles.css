@@ -1,4 +1,4 @@
-p, h1, h2, h3 {   
+p, h1, h2, h3, a {   
     font-family: "myriad-variable",sans-serif;   
     font-variation-settings: 'wght' 300, 'wdth' 70; 
 }
@@ -144,4 +144,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#tags ul li {
+    padding: 0.8rem;
+    list-style-type: none;
+    background-image: 
 }
