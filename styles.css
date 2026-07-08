@@ -1,10 +1,16 @@
+/* BACKGROUND DETAILS */
+
 p, h1, h2, h3, a {   
     font-family: "myriad-variable",sans-serif;   
     font-variation-settings: 'wght' 300, 'wdth' 70; 
 }
 
+ul {
+    padding: 0;
+}
+
 body {
-    background-image: url("wallpaper.jpg");
+    background-image: url("img/wallpaper.jpg");
     background-color: #AEB5A5;
     font-family: monospace;
     
@@ -18,7 +24,7 @@ body {
     align-items: center;
 }
 
-/* MAIN BODY + BOXES */
+/* OUTERMOST CONTAINER */
 
 #outer-box {
     height: 850px;
@@ -34,6 +40,8 @@ body {
     justify-content: center;
 }
 
+/* TOP BANNER */
+
 #banner {
     height: 150px;
     width: 97.5%;
@@ -42,11 +50,13 @@ body {
     margin-top: 12.5px;
     margin-bottom: 12.5px;
 
-    background-image: url("banner_image.jpg");
+    background-image: url("img/banner_image.jpg");
     background-position: center;
     background-color: #f6f1ee;
     border: 3px solid #AEB5A5;
 }
+
+/* MIDDLE SECTION CONTAINER */
 
 #middle-section {
     height: 500px;
@@ -69,6 +79,20 @@ body {
     justify-content: center;
 }
 
+.mini-header {
+    height: 50px;
+    background-color: #989E90;
+    border-bottom: 3px solid #AEB5A5;
+
+    color: #F5F1EE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SIDEBAR NAVIGATION */
+
 #tags {
     height: 350px;
     width: 100%;
@@ -79,6 +103,34 @@ body {
     border: 3px solid #AEB5A5;
 }
 
+.tag_nav {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tag_nav a {
+    display: block;
+    color: black;
+    padding: 13px;
+    text-decoration: none;
+}
+
+.tag_nav a.active {
+    background-color: #9e9091;
+    color: #F5F1EE
+}
+
+.tag_nav a:hover:not(.active) {
+    background-color: #b4b2b7;
+    color: #F5F1EE;
+}
+
+/* HOME - ART SPACE */
+
 #art-space {
     height: 137.5px;
     width: 100%;
@@ -86,6 +138,8 @@ body {
     background-color: #f6f1ee;
     border: 3px solid #AEB5A5;
 }
+
+/* HOME - WELCOME MESSAGE */
 
 #welcome {
     height: 293.75px;
@@ -101,6 +155,8 @@ body {
     padding: 0px 8px 0px 8px;
 }
 
+/* HOME - LATEST UPDATES */
+
 #latest {
     height: 293.75px;
     width: 100%;
@@ -108,6 +164,8 @@ body {
     background-color: #f6f1ee;
     border: 3px solid #AEB5A5;
 }
+
+/* HOME - MAIN BLOG POSTS */
 
 #blogposts {
     height: 500px;
@@ -120,6 +178,8 @@ body {
     border: 3px solid #AEB5A5;
 }
 
+/* FOOTER */
+
 #footer {
     height: 150px;
     width: 97.5%;
@@ -127,27 +187,8 @@ body {
 
     margin-bottom: 12.5px;
 
-    background-image: url("footer_image.jpg");
+    background-image: url("img/footer_image.jpg");
     background-position: center;
     background-color: #f6f1ee;
     border: 3px solid #AEB5A5;
-}
-
-/* DETAILS */
-
-.mini-header, h2 {
-    height: 50px;
-    background-color: #989E90;
-
-    color: #F5F1EE;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#tags ul li {
-    padding: 0.8rem;
-    list-style-type: none;
-    background-image: 
 }
