@@ -59,17 +59,7 @@ body {
     justify-content: center;
 }
 
-#navigation {
-    height: 500px;
-    width: 20%;
-
-    margin-right: 12.5px;
-
-    background-color: #f6f1ee;
-    border: 3px solid #AEB5A5;
-}
-
-#middle-section-right {
+.middle-section-inner {
     height: 500px;
     width: 20%;
 
@@ -77,6 +67,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#tags {
+    height: 350px;
+    width: 100%;
+
+    margin-bottom: 12.5px;
+
+    background-color: #f6f1ee;
+    border: 3px solid #AEB5A5;
+}
+
+#art-space {
+    height: 137.5px;
+    width: 100%;
+
+    background-color: #f6f1ee;
+    border: 3px solid #AEB5A5;
 }
 
 #welcome {
@@ -87,6 +95,10 @@ body {
 
     background-color: #f6f1ee;
     border: 3px solid #AEB5A5;
+}
+
+#welcome p {
+    padding: 0px 8px 0px 8px;
 }
 
 #latest {
@@ -101,6 +113,7 @@ body {
     height: 500px;
     width: 60%;
 
+    margin-left:12.5px;
     margin-right: 12.5px;
 
     background-color: #f6f1ee;
