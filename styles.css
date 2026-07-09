@@ -59,7 +59,7 @@ body {
 /* MIDDLE SECTION CONTAINER */
 
 #middle-section {
-    height: 500px;
+    height: 550px;
     width: 97.5%;
 
     margin-bottom: 12.5px;
@@ -70,7 +70,7 @@ body {
 }
 
 .middle-section-inner {
-    height: 500px;
+    height: 550px;
     width: 20%;
 
     display: flex;
@@ -80,7 +80,7 @@ body {
 }
 
 .mini-header {
-    height: 50px;
+    height: 40px;
     background-color: #989E90;
     border-bottom: 3px solid #AEB5A5;
 
@@ -94,7 +94,7 @@ body {
 /* SIDEBAR NAVIGATION */
 
 #tags {
-    height: 350px;
+    height: 340px;
     width: 100%;
 
     margin-bottom: 12.5px;
@@ -142,7 +142,7 @@ body {
 /* HOME - WELCOME MESSAGE */
 
 #welcome {
-    height: 293.75px;
+    height: 225px;
     width: 100%;
 
     margin-bottom: 12.5px;
@@ -153,23 +153,64 @@ body {
 
 #welcome p {
     padding: 0px 8px 0px 8px;
+    line-height: 22px;
 }
 
-/* HOME - LATEST UPDATES */
+/* HOME - UPDATES */
 
 #latest {
-    height: 293.75px;
+    height: 120px;
+    width: 100%;
+
+    margin-bottom: 12.5px;
+
+    background-color: #f6f1ee;
+    border: 3px solid #AEB5A5;
+}
+
+#wip {
+    height: 120px;
+    width: 100%;
+
+    background-color: #f6f1ee;
+    border: 3px solid #AEB5A5;
+
+}
+
+/* HOME - MAIN BLOG POSTS */
+
+#blogs {
+    height: 550px;
+    width: 60%;
+
+    margin-left:12.5px;
+    margin-right: 12.5px;
+
+    background-color: #f6f1ee;
+    border: 3px solid #AEB5A5;
+}
+
+/* SPECIFIC ABOUT */
+
+.specific-about {
+    height: 490px;
     width: 100%;
 
     background-color: #f6f1ee;
     border: 3px solid #AEB5A5;
 }
 
-/* HOME - MAIN BLOG POSTS */
+.specific-about p {
+    padding: 0px 8px 0px 8px;
+    line-height: 22px;
+}
 
-#blogposts {
-    height: 500px;
+/* SPECIFIC BLOGS */
+
+.scroll-blogs {
+    height: 550px;
     width: 60%;
+    overflow-y: scroll;
 
     margin-left:12.5px;
     margin-right: 12.5px;
@@ -181,7 +222,7 @@ body {
 /* FOOTER */
 
 #footer {
-    height: 150px;
+    height: 100px;
     width: 97.5%;
     border-radius: 0px 0px 60px 60px;
 
