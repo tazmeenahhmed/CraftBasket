@@ -1,7 +1,3 @@
-// POPUPS
-
-
-
 // LOAD OBJECTS INTO PAGES
 
 function loadClayPage() {
@@ -14,9 +10,12 @@ function loadClayPage() {
 }
 
 function loadObjects(object) {
+
+    // CREATE PREVIEW CARD
     const container = document.querySelector(".scroll-blogs");
     const cardContainer = document.createElement("div");
     cardContainer.setAttribute('class', 'card-container');
+    cardContainer.setAttribute('id', object.id);
     container.append(cardContainer);
 
     const imgContainer = document.createElement("div");
@@ -36,5 +35,54 @@ function loadObjects(object) {
     date.textContent = object.date;
     textContainer.append(title, date);
 
+    // CREATE BLOG POPUP
+    const popupContainer = document.createElement("div");
+    popupContainer.setAttribute('class', 'popup-container');
+    popupContainer.setAttribute('id', object.popupID);
+    cardContainer.append(popupContainer);
+
+    const overlay = document.createElement("div");
+    overlay.setAttribute('class', 'overlay');
+    const content = document.createElement("div");
+    content.setAttribute('class', 'content');
+    popupContainer.append(overlay, content);
+
+    const closeBtn = document.createElement("div");
+    closeBtn.setAttribute('class', 'close-btn');
+    closeBtn.innerHTML = "&times;";
+    content.append(closeBtn);
+
+    cardContainer.addEventListener("click", () => {
+        togglePopup(object.popupID);
+    });
+
+    closeBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        togglePopup(object.popupID);
+    });
 
 }
+
+
+function togglePopup(id) {
+    document.getElementById(id).classList.toggle("active");
+}
+
+
+
+/* DELETE AFTER DONE TESTING */
+const ccc = document.getElementById("temp");
+ccc.addEventListener("click", () => {
+     togglePopupTemp();
+});
+
+const btn = document.getElementById("temp-btn");
+btn.addEventListener("click", (e) => {
+     e.stopPropagation();
+     togglePopupTemp();
+});
+
+function togglePopupTemp() {
+    document.getElementById("temp-popup").classList.toggle("active");
+}
+

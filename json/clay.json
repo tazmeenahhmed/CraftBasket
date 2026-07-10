@@ -6,7 +6,9 @@
         "description": "A charm inspired by the webnovel series Omniscient Reader's Viewpoint by singNsong. The golden star patterns represent the cosmic beings known as Constellations in the story, while the broken sword and white roses represent the main character and his sacrifices.",
         "inspiration": "Omniscient Reader's Viewpoint",
         "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": ["img/clay/orv_book1.jpg", "img/clay/orv_book2.jpg", "img/clay/orv_book3.jpg"]
+        "gallery": ["img/clay/orv_book1.jpg", "img/clay/orv_book2.jpg", "img/clay/orv_book3.jpg"],
+        "id": "kdj-book",
+        "popupID": "kdj-book-popup"
     },
 
     {
@@ -16,7 +18,9 @@
         "description": "Test",
         "inspiration": "Lots of Testing",
         "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": "img/clay/orv_book1.jpg"
+        "gallery": "img/clay/orv_book1.jpg",
+        "id": "copy-one",
+        "popupID": "copy-one-popup"
     },
 
     {
@@ -26,6 +30,8 @@
         "description": "Test",
         "inspiration": "Lots of Testing",
         "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": "img/clay/orv_book1.jpg"
+        "gallery": "img/clay/orv_book1.jpg",
+        "id": "copy-two",
+        "popupID": "copy-two-popup"
     }
 ]

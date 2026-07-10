@@ -238,6 +238,7 @@ body {
 
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .img-control {
@@ -262,6 +263,64 @@ body {
 
 .text-control p {
     color: grey;
+}
+
+/* BLOG POPUP */
+
+.popup-container .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;                         /* stack position */
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.6);
+}
+
+.popup-container .content {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    height: 600px;
+    width: 1000px;
+    z-index: 2;
+
+    background: #f6f1ee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup-container .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #AEB5A5;
+    color: #f6f1ee;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup-container.active .overlay {
+    display: block;
+}
+
+.popup-container.active .content {
+    transform: translate(-50%, -50%);
+    display: block;
+    pointer-events: auto;
 }
 
 /* FOOTER */
