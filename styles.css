@@ -205,7 +205,7 @@ body {
     line-height: 22px;
 }
 
-/* SPECIFIC BLOGS */
+/* BLOGS PREVIEW IN TAGS */
 
 .scroll-blogs {
     height: 550px;
@@ -227,26 +227,41 @@ body {
 }
 
 .card-container {
-    min-height: 250px;
+    min-height: 140px;
     width: 96%;
+    border-radius: 15px;
 
     margin: 8px;
     flex-shrink: 0;
 
-    background-color: #AEB5A5;
-    border: 3px solid #f6f1ee;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
 }
 
-/* INSERT IMAGE SLIDER HERE */
 .img-control {
+    height: 109px;
+    width: 99px;
+    margin: 18px 18px;
+    overflow: hidden;
+}
 
-    padding: 8px;
-    margin-left: 8px;
+.img-control img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1.5);
+    transform-origin: center;
 }
 
 .text-control {
-    /*overflow-y: scroll;*/
-    padding: 8px;
+    margin-right: 18px;
+}
+
+.text-control p {
+    color: grey;
 }
 
 /* FOOTER */
