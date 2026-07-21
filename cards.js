@@ -86,3 +86,16 @@ function togglePopupTemp() {
     document.getElementById("temp-popup").classList.toggle("active");
 }
 
+/* IMAGE SLIDER */
+
+// delete this later its only temp
+const temp = [
+    "img/clay/orv_books1.jpg",
+    "img/clay/orv_books2.jpg",
+    "img/clay/orv_books3.jpg",
+]
+
+function showSlide(index) {
+    document.querySelector(".slider-image").src = temp[index];
+}
+
