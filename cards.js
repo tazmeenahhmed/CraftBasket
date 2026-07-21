@@ -39,7 +39,7 @@ function loadObjects(object) {
     const popupContainer = document.createElement("div");
     popupContainer.setAttribute('class', 'popup-container');
     popupContainer.setAttribute('id', object.popupID);
-    cardContainer.append(popupContainer);
+    container.append(popupContainer);
 
     const overlay = document.createElement("div");
     overlay.setAttribute('class', 'overlay');
@@ -61,6 +61,49 @@ function loadObjects(object) {
         togglePopup(object.popupID);
     });
 
+    // BLOG POPUP CONTENTS
+    const contentInside = document.createElement("div");
+    contentInside.setAttribute('class', 'content-container');
+    content.append(contentInside);
+
+    const slider = document.createElement("div");
+    slider.setAttribute('class', 'slider');
+    const blogContent = document.createElement("div");
+    blogContent.setAttribute('class', 'blog-content');
+    contentInside.append(slider, blogContent);
+
+    const dimension = document.createElement("div");
+    dimension.setAttribute('class', 'img-dimensions');
+    const blogImg = document.createElement('img');
+    blogImg.setAttribute('class', 'current-img-popup');
+    blogImg.src = object.gallery[0];
+    dimension.append(blogImg);
+
+    const navDots = document.createElement("div");
+    navDots.setAttribute('class', 'nav-dots');
+    for (let i = 0; i < object.gallery.length; i++) {
+        const navBtn = document.createElement("button");
+        navBtn.setAttribute('class', 'nav-btn');
+        navBtn.addEventListener("click", (e) => {
+            //e.stopPropagation();
+            showSlide(blogImg, object.gallery, navDots, i);
+        });
+
+        if (i === 0) { navBtn.classList.add('class', 'active'); }
+        navDots.append(navBtn);
+    }
+    slider.append(dimension, navDots);
+
+    const blogTitle = document.createElement('h2');
+    blogTitle.textContent = object.title;
+    const blogDate = document.createElement('h3');
+    blogDate.textContent = object.date;
+    const breakLine = document.createElement('br');
+    const blogParagraph = document.createElement('p');
+    blogParagraph.textContent = object.description;
+    const blogInspo = document.createElement('p');
+    blogInspo.textContent = object.inspiration;
+    blogContent.append(blogTitle, blogDate, breakLine, blogParagraph, blogInspo);
 }
 
 
@@ -68,34 +111,14 @@ function togglePopup(id) {
     document.getElementById(id).classList.toggle("active");
 }
 
+// POPUP IMAGE SLIDER
+function showSlide(img, gallery, navDots, index) {
+    img.src = gallery[index];
 
-
-/* DELETE AFTER DONE TESTING */
-const ccc = document.getElementById("temp");
-ccc.addEventListener("click", () => {
-     togglePopupTemp();
-});
-
-const btn = document.getElementById("temp-btn");
-btn.addEventListener("click", (e) => {
-     e.stopPropagation();
-     togglePopupTemp();
-});
-
-function togglePopupTemp() {
-    document.getElementById("temp-popup").classList.toggle("active");
+    navDots.querySelectorAll(".nav-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+    navDots.children[index].classList.add("active");
 }
 
-/* IMAGE SLIDER */
-
-// delete this later its only temp
-const temp = [
-    "img/clay/orv_books1.jpg",
-    "img/clay/orv_books2.jpg",
-    "img/clay/orv_books3.jpg",
-]
-
-function showSlide(index) {
-    document.querySelector(".slider-image").src = temp[index];
-}
 

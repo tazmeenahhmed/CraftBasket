@@ -18,7 +18,7 @@
         "description": "Test",
         "inspiration": "Lots of Testing",
         "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": "img/clay/orv_book1.jpg",
+        "gallery": ["img/clay/orv_book1.jpg"],
         "id": "copy-one",
         "popupID": "copy-one-popup"
     },
@@ -30,7 +30,7 @@
         "description": "Test",
         "inspiration": "Lots of Testing",
         "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": "img/clay/orv_book1.jpg",
+        "gallery": ["img/clay/orv_book1.jpg"],
         "id": "copy-two",
         "popupID": "copy-two-popup"
     }
