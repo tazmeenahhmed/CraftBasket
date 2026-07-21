@@ -1,5 +1,4 @@
 // LOAD OBJECTS INTO PAGES
-
 function loadClayPage() {
     fetch("json/clay.json")
         .then(response => response.json())
@@ -9,6 +8,52 @@ function loadClayPage() {
         .catch(error => console.error("Failed to load clay data:", error));
 }
 
+function loadPaintingPage() {
+    fetch("json/painting.json")
+        .then(response => response.json())
+        .then(paintingObjects => {
+            paintingObjects.forEach(loadObjects);
+        })
+        .catch(error => console.error("Failed to load painting data:", error));
+}
+
+function loadCardboardPage() {
+    fetch("json/cardboard.json")
+        .then(response => response.json())
+        .then(cardboardObjects => {
+            cardboardObjects.forEach(loadObjects);
+        })
+        .catch(error => console.error("Failed to load cardboard data:", error));
+}
+
+function loadPixelPage() {
+    fetch("json/pixel.json")
+        .then(response => response.json())
+        .then(pixelObjects => {
+            pixelObjects.forEach(loadObjects);
+        })
+        .catch(error => console.error("Failed to load pixel data:", error));
+}
+
+function loadTheatrePage() {
+    fetch("json/theatre.json")
+        .then(response => response.json())
+        .then(theatreObjects => {
+            theatreObjects.forEach(loadObjects);
+        })
+        .catch(error => console.error("Failed to load theatre data:", error));
+}
+
+function loadDesignPage() {
+    fetch("json/design.json")
+        .then(response => response.json())
+        .then(designObjects => {
+            designObjects.forEach(loadObjects);
+        })
+        .catch(error => console.error("Failed to load design data:", error));
+}
+
+// CREATE PAGE CONTENTS
 function loadObjects(object) {
 
     // CREATE PREVIEW CARD
