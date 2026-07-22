@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Omniscient Reader's Viewpoint Book Charm",
+        "date": "January 27, 2024",
+        "imgAlt": "A thick brown book detailed in a gold star and outline. On top of it rests a broken grey sword with a silver hilt. White roses are on opposite corners of the book",
+        "description": "A charm inspired by the webnovel series Omniscient Reader's Viewpoint by singNsong. The golden star patterns represent the cosmic beings known as Constellations in the story, while the broken sword and white roses represent the main character and his sacrifices.",
+        "inspiration": "Omniscient Reader's Viewpoint",
+        "thumbnail": "img/clay/orv_book1.jpg",
+        "gallery": ["img/clay/orv_book1.jpg", "img/clay/orv_book2.jpg", "img/clay/orv_book3.jpg"],
+        "id": "kdj-book",
+        "popupID": "kdj-book-popup"
+    }
+]
