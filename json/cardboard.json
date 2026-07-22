@@ -1,13 +1,25 @@
 [
     {
-        "title": "Omniscient Reader's Viewpoint Book Charm",
-        "date": "January 27, 2024",
-        "imgAlt": "A thick brown book detailed in a gold star and outline. On top of it rests a broken grey sword with a silver hilt. White roses are on opposite corners of the book",
-        "description": "A charm inspired by the webnovel series Omniscient Reader's Viewpoint by singNsong. The golden star patterns represent the cosmic beings known as Constellations in the story, while the broken sword and white roses represent the main character and his sacrifices.",
-        "inspiration": "Omniscient Reader's Viewpoint",
-        "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": ["img/clay/orv_book1.jpg", "img/clay/orv_book2.jpg", "img/clay/orv_book3.jpg"],
-        "id": "kdj-book",
-        "popupID": "kdj-book-popup"
+        "title": "Generation of Birds",
+        "date": "May 17, 2020",
+        "imgAlt": "A cylindrical cup with a yellow fading into orange background. Attached to the cup is clay birds bringing leaves to their children in nests, as well as some clay trees with nests and a few baby birds inside it.",
+        "description": "A cup with two birds on either side delivering food to their children that are nested in trees. This was inspired by a similar hand-stitched image my mother made in her youth, where she created a singular blue bird delivering food to its three children. In her creation, the blue bird was supposed to represent my grandmother and the three children were her mother and her siblings. This stitch-painting was like gold to me in my own youth, and I wanted to recreate it in my own style. In addition to the original blue bird and children, I added a red bird (representing one of the blue bird's kids grown up as my mother) delivering food to it's two children, representing me and my sister.",
+        "inspiration": "A hand-stitched version of the same picture made by my mother in her youth",
+        "thumbnail": "img/cardboard/bird_homage1.jpg",
+        "gallery": ["img/cardboard/bird_homage1.jpg", "img/cardboard/bird_homage2.jpg"],
+        "id": "birdHomage",
+        "popupID": "birdHomagePopup"
+    },
+
+    {
+        "title": "Decorative Cardboard Books",
+        "date": "July 21, 2021",
+        "imgAlt": "Five different books laid out on paper. The top left book is navy blue with a red heart in the middle and gold designs. The top right book is purple with a white daisy flower in the middle. The middle book is green with gold edges and a gold star in the middle. The bottom left is a pink book with brown diamonds. The bottom right is a blue book with clouds.",
+        "description": "A variety of different mini cardboard books that I intended to turn into charms. These were made based on book lockets I saw in the store that I wanted to try recreating within my own scope.",
+        "inspiration": "Book necklace charms",
+        "thumbnail": "img/cardboard/books1.jpg",
+        "gallery": ["img/cardboard/books1.jpg", "img/cardboard/books2.jpg"],
+        "id": "fiveBooks",
+        "popupID": "fiveBooksPopup"
     }
 ]

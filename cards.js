@@ -26,13 +26,13 @@ function loadCardboardPage() {
         .catch(error => console.error("Failed to load cardboard data:", error));
 }
 
-function loadPixelPage() {
-    fetch("json/pixel.json")
+function loadMiscPage() {
+    fetch("json/misc.json")
         .then(response => response.json())
-        .then(pixelObjects => {
-            pixelObjects.forEach(loadObjects);
+        .then(miscObjects => {
+            miscObjects.forEach(loadObjects);
         })
-        .catch(error => console.error("Failed to load pixel data:", error));
+        .catch(error => console.error("Failed to load misc data:", error));
 }
 
 function loadTheatrePage() {
@@ -147,7 +147,9 @@ function loadObjects(object) {
     const blogParagraph = document.createElement('p');
     blogParagraph.textContent = object.description;
     const blogInspo = document.createElement('p');
-    blogInspo.textContent = object.inspiration;
+    const bold = document.createElement("strong");
+    bold.textContent = "Inspiration: ";
+    blogInspo.append(bold, object.inspiration);
     blogContent.append(blogTitle, blogDate, breakLine, blogParagraph, blogInspo);
 }
 
