@@ -1,13 +1,68 @@
 [
     {
-        "title": "Omniscient Reader's Viewpoint Book Charm",
-        "date": "January 27, 2024",
-        "imgAlt": "A thick brown book detailed in a gold star and outline. On top of it rests a broken grey sword with a silver hilt. White roses are on opposite corners of the book",
-        "description": "A charm inspired by the webnovel series Omniscient Reader's Viewpoint by singNsong. The golden star patterns represent the cosmic beings known as Constellations in the story, while the broken sword and white roses represent the main character and his sacrifices.",
-        "inspiration": "Omniscient Reader's Viewpoint",
-        "thumbnail": "img/clay/orv_book1.jpg",
-        "gallery": ["img/clay/orv_book1.jpg", "img/clay/orv_book2.jpg", "img/clay/orv_book3.jpg"],
-        "id": "kdj-book",
-        "popupID": "kdj-book-popup"
+        "title": "Hot Glue Flowers",
+        "date": "January 20, 2026",
+        "imgAlt": "Four flowers that are respectively orange, yellow, red, and pink. Each flower has 6 petals that are detailed in white dots and lines. Each petal and the pollen is outlined in black.",
+        "description": "Flowers crafted from hot glue. The back side of the floweres are covered in their respective paint color, and the front side is outlined in black with white details. This was made immediately after purchasing a hot glue gun for the first time to see what kind of molds I could make.",
+        "inspiration": "N/A",
+        "thumbnail": "img/misc/hotglue_flowers.jpg",
+        "gallery": ["img/misc/hotglue_flowers.jpg"],
+        "id": "hotGlueFlowers",
+        "popupID": "hotGlueFlowersPopup"
+    },
+        {
+        "title": "Seashell Fountain",
+        "date": "January 12, 2026",
+        "imgAlt": "The base is a circular small log. On the edge curve is a lot of small seashells piled up on top of each other, with some fake leaves attached to their backs. Trailing from the highest seashell to the floor of the log and leaking out is transparent hot glue.",
+        "description": "After getting a cupful of tiny seashells from Monterey Bay and acquiring a hotglue gun, I decided to try and recreate a seashell waterfall. This piece was a bit difficult since I had problems simulating a waterflow with hot glue in the way I wanted, as well as learning that the hot glue sticks I was using were indeed not transparent like the ones used in the DIY videos. I also had some trouble glueing the three-step shells to the biggest shell and making them stand, but was eventually able to make it work.",
+        "inspiration": "Seashell waterfall DIYs",
+        "thumbnail": "img/misc/seashell_seashore1.jpg",
+        "gallery": ["img/misc/seashell_seashore1.jpg", "img/misc/seashell_seashore2.jpg", "img/misc/seashell_seashore3.jpg"],
+        "id": "seashellFountain",
+        "popupID": "seashellFountainPopup"
+    },
+    {
+        "title": "Red and Blue Container",
+        "date": "July 22, 2025",
+        "imgAlt": "A small glass cylindrical pot. The top and bottom half is strung in red and white string, witha straight line of blue beads decorating it.",
+        "description": "A small glass pot threaded and decorated at the request of my mother. This was an experimental piece after I saw something similar on Instagram.",
+        "inspiration": "Instagram",
+        "thumbnail": "img/misc/american1.jpg",
+        "gallery": ["img/misc/american1.jpg"],
+        "id": "redBlueContainer",
+        "popupID": "redBlueContainerPopup"
+    },
+    {
+        "title": "Moss Mirror",
+        "date": "November 17, 2023",
+        "imgAlt": "A square mirror, it's edges covered in green moss. On the bottom left, there are two small red mushrooms. On the top right, there is a sun with a purple middle.",
+        "description": "I made this piece to imitate DIY fairy moss mirrors I've seen on Instagram, but to a much smaller scale. The surrounding moss is made up of small, cut up pieces of sponges dipped in green paint. The mushrooms are made up of clay, and the purple and gold sun is a broken piece of an earring. ",
+        "inspiration": "Fairy mirror DIYs",
+        "thumbnail": "img/misc/mirror1.jpg",
+        "gallery": ["img/misc/mirror1.jpg", "img/misc/mirror2.jpg"],
+        "id": "mossMirror",
+        "popupID": "mossMirrorPopup"
+    },
+    {
+        "title": "Swan Hedge",
+        "date": "March 8, 2023",
+        "imgAlt": "A 3D rectangular base covered in moss on all four sides. On the top flat side lays a mirror. On top of the mirror is a heart shaped moss-hedge, with two swans facing each other in a heart-shaped angle. In the hedge in front of the swans are four pink roses.",
+        "description": "A more green take on CraftyFinger's bronze swan DIY gift. The base is made up of cardboard, with a sticker mirror on the top. The moss is made up of cut up sponges in tiny pieces that were dipped in green paint. The swans and flowers were made with clay.",
+        "inspiration": "CraftyFingers Youtube channel",
+        "thumbnail": "img/misc/swans1.jpg",
+        "gallery": ["img/misc/swans1.jpg", "img/misc/swans2.jpg", "img/misc/swans3.jpg", "img/misc/swans4.jpg"],
+        "id": "swanHedge",
+        "popupID": "swanHedgePopup"
+    },
+    {
+        "title": "Colorful Wire Trees",
+        "date": "February 23, 2023",
+        "imgAlt": "Four wire trees. The first left wire tree has a blue trunk and white translucent beads attatched to the branches. The remaining three trees have a red trunk with translucent pink and orange beads attached to the branches.",
+        "description": "A handful of wire trees built off of straightened paper clips and glued on translucent beads. I wanted to build a more realistic tree, but since I was lacking brown wire, I decided to go through a more fantastical route. The wires were a bit tough to shape, and the beads needed extra glue to stick to the thin branches, although they still fall off and need regluing every now and then.",
+        "inspiration": "Wire tree DIYs",
+        "thumbnail": "img/misc/trees1.jpg",
+        "gallery": ["img/misc/trees1.jpg", "img/misc/trees2.jpg", "img/misc/trees3.jpg"],
+        "id": "colorfulWireTrees",
+        "popupID": "colorfulWireTreesPopup"
     }
 ]

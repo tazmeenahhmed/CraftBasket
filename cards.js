@@ -126,16 +126,18 @@ function loadObjects(object) {
 
     const navDots = document.createElement("div");
     navDots.setAttribute('class', 'nav-dots');
-    for (let i = 0; i < object.gallery.length; i++) {
-        const navBtn = document.createElement("button");
-        navBtn.setAttribute('class', 'nav-btn');
-        navBtn.addEventListener("click", (e) => {
-            //e.stopPropagation();
-            showSlide(blogImg, object.gallery, navDots, i);
-        });
+    if (object.gallery.length > 1) {
+        for (let i = 0; i < object.gallery.length; i++) {
+            const navBtn = document.createElement("button");
+            navBtn.setAttribute('class', 'nav-btn');
+            navBtn.addEventListener("click", (e) => {
+                //e.stopPropagation();
+                showSlide(blogImg, object.gallery, navDots, i);
+            });
 
-        if (i === 0) { navBtn.classList.add('class', 'active'); }
-        navDots.append(navBtn);
+            if (i === 0) { navBtn.classList.add('class', 'active'); }
+            navDots.append(navBtn);
+        }
     }
     slider.append(dimension, navDots);
 
